@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结算</title>
+    <link rel="stylesheet" href="./css/settle.min.css">
+</head>
+
+<body>
+    <header>
+        <div></div>
+        <h3>购物车</h3>
+        <button id="admin">管理</button>
+    </header>
+    <small>共2件商品</small>
+    <div class="content">
+        <div class="shop" id="shop">
+            <ul>
+                <li>
+                    <div class="check" id="check"></div>
+                    <img src="./images/c480e39d620cd609ba0ed3ed2bc92a3.png" alt="">
+                    <div class="introduce">
+                        <h6>依泉润唇膏套装 保湿滋润补水无色防干裂 唇部护理唇膜淡化唇纹护唇膏... </h6>
+                        <select>
+                            <option value='a'>Bm/ml</option>
+                            <option value='b'>香蕉</option>
+                            <option value='c'>橘子</option>
+                            <option value='d'>芒果</option>
+                        </select>
+                        <div class="price">
+                            <span>￥98.9</span>
+                            <div class="modified">
+                                <button id="minus">－</button>
+                                <span id="num">1</span>
+                                <button id="plus">＋</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="check"></div>
+                    <img src="./images/454afc42fca8e1dd3aacb641a84dbd2.png" alt="">
+                    <div class="introduce">
+                        <h6>专柜正品YSL圣罗兰口红方管迷魅纯漾亮采唇膏</h6>
+                        <select>
+                            <option value='a'>1#正红色</option>
+                            <option value='b'>香蕉</option>
+                            <option value='c'>橘子</option>
+                            <option value='d'>芒果</option>
+                        </select>
+                        <div class="price">
+                            <span>￥130</span>
+                            <div class="modified">
+                                <button>－</button>
+                                <span>1</span>
+                                <button>＋</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="balance">
+        <div class="item">
+            <div class="item-left">
+                <div class="check"></div>
+                <span>全选</span>
+            </div>
+            <div class="item-right">
+                <span>合计:<h4 class="price" id="price">￥98.9</h4></span>
+                <button type="submit" id="settle">结 算</button>
+            </div>
+        </div>
+        <div class="item2">
+            <div class="item2-left">
+                <div class="check"></div>
+                <span>全选</span>
+            </div>
+            <div class="item2-right">
+                <div class="del">
+                    <img src="./images/collect.png" alt="">
+                    <h4>移入收藏夹</h4>
+                </div>
+                <img src="./images/del.png" alt="">
+                <button type="submit" id="del">删除</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>
+                <img src="./images/house.png" alt="">
+                <h6>主页</h6>
+            </li>
+            <li>
+                <img src="./images/more.png" alt="">
+                <h6>分类</h6>
+            </li>
+            <li>
+                <img src="./images/shop-color.png" alt="">
+                <h6>购物车</h6>
+            </li>
+            <li>
+                <img src="./images/user.png" alt="">
+                <h6>我的</h6>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script src="./javaScript/settle.js"></script>
+
+</html>
