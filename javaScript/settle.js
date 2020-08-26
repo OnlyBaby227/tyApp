@@ -1,7 +1,6 @@
 function $(id) {
     return document.getElementById(id);
 }
-
 function show() {
     var i = 0;
     var admin = $("admin");
@@ -9,7 +8,7 @@ function show() {
     var oNum = $("num");
     var oPlus = $("plus");
     var oPrice = $("price");
-    var oDel=$("del");
+    var oDel = $("del");
     var itemOne = document.getElementsByClassName("item")[0];
     var itemTwo = document.getElementsByClassName("item2")[0];
     admin.onclick = function () {
@@ -52,29 +51,31 @@ function show() {
         i++;
         if (i % 2 == 1) {
             this.style.backgroundImage = 'url(../images/no.png)';
-            oPrice.innerText = '￥' + 0 ;
-        }else{
+            oPrice.innerText = '￥' + 0;
+        } else {
             this.style.backgroundImage = 'url(../images/check.png)';
             oPrice.innerText = '￥' + (98.9 * Number(oNum.innerText)).toFixed(1);
         }
-        
+
     }
-    var oShop=$("shop");
-        var oLi=oShop.querySelector('ul').querySelectorAll('li')
-        // console.log(oLi);
-        oDel.onclick=function(){
-            i++;
-            if(i % 2 == 0){
-                oLi[0].remove();
-                oPrice.innerText = '￥' + 0 ;
-            }else{
-                oLi[1].remove();
-                oPrice.innerText = '￥' + 0 ;
-            }
+    var oShop = $("shop");
+    var oLi = oShop.querySelector('ul').querySelectorAll('li')
+    // console.log(oLi);
+    oDel.onclick = function () {
+        i++;
+        if (i % 2 == 0) {
+            oLi[0].remove();
+            oPrice.innerText = '￥' + 0;
+        } else {
+            oLi[1].remove();
+            oPrice.innerText = '￥' + 0;
         }
-        var oSettle=$("settle");
-        oSettle.onclick=function(){
-            location.href="/affirm.html"
-        }
+    }
+    var oSettle = $("settle");
+    oSettle.onclick = function () {
+        location.href = "/affirm.html"
+    }
+    
+  
 }
 show()
