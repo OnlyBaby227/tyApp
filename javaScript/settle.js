@@ -1,6 +1,7 @@
 function $(id) {
     return document.getElementById(id);
 }
+
 function show() {
     var i = 0;
     var admin = $("admin");
@@ -9,6 +10,9 @@ function show() {
     var oPlus = $("plus");
     var oPrice = $("price");
     var oDel = $("del");
+    var oShop = $("shop");
+    var check = $("check");
+    var checkTwo = document.getElementsByClassName('check')[1];
     var itemOne = document.getElementsByClassName("item")[0];
     var itemTwo = document.getElementsByClassName("item2")[0];
     admin.onclick = function () {
@@ -46,36 +50,51 @@ function show() {
             oMinus.style.background = "white";
         }
     }
-    var check = $("check");
-    check.onclick = function () {
-        i++;
-        if (i % 2 == 1) {
-            this.style.backgroundImage = 'url(../images/no.png)';
-            oPrice.innerText = '￥' + 0;
-        } else {
-            this.style.backgroundImage = 'url(../images/check.png)';
-            oPrice.innerText = '￥' + (98.9 * Number(oNum.innerText)).toFixed(1);
-        }
 
+    function entrust() {
+        var li = oShop.children[0].querySelectorAll('li')[0];
+        var li2 = oShop.children[0].querySelectorAll('li')[1];
+        li.onclick = function (ev) {
+            i++;
+            var ev = ev || window.event;
+            var target = ev.target || ev.srcElement;
+            if (target.className.toLowerCase() == 'check' && i % 2 == 1) {
+                check.style.backgroundImage = 'url(../images/no.png)';
+                oPrice.innerText = '￥' + 0;
+            } else {
+                check.style.backgroundImage = 'url(../images/check.png)';
+                oPrice.innerText = '￥' + (98.9 * Number(oNum.innerText)).toFixed(1);
+            }
+        }
+        li2.onclick = function (ev) {
+            i++;
+            var ev = ev || window.event;
+            var target = ev.target || ev.srcElement;
+            if (target.className.toLowerCase() == 'check' && i % 2 == 0) {
+                checkTwo.style.backgroundImage = 'url(../images/no.png)';
+                oPrice.innerText = '￥' + 0;
+            } else {
+                checkTwo.style.backgroundImage = 'url(../images/check.png)';
+                oPrice.innerText = '￥' + 130;
+            }
+        }
     }
-    var oShop = $("shop");
+    entrust()
     var oLi = oShop.querySelector('ul').querySelectorAll('li')
-    // console.log(oLi);
     oDel.onclick = function () {
         i++;
         if (i % 2 == 0) {
-            oLi[0].remove();
+            oLi[0].remove('li');
             oPrice.innerText = '￥' + 0;
         } else {
-            oLi[1].remove();
-            oPrice.innerText = '￥' + 0;
+            confirm("请选择要删除的物品");
         }
+
     }
+
     var oSettle = $("settle");
     oSettle.onclick = function () {
         location.href = "/affirm.html"
     }
-    
-  
 }
 show()
