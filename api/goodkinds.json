@@ -1,0 +1,143 @@
+[
+    {
+        "kind":"美妆洗护" ,
+        "goods":[
+            {
+                "img":"kind9.png",
+                "name":"洗发沐浴"
+            },{
+                "img":"kind4.jpg",
+                "name":"面膜"
+            }
+            ,{
+                "img":"kind4.jpg",
+                "name":"面霜"
+            }
+        ]
+    },
+    {
+        "kind":"居家日用" ,
+        "goods":[
+            {
+                "img":"product3.jpg",
+                "name":"家用小电器"
+            },{
+                "img":"kind10.jpg",
+                "name":"床"
+            }
+            ,{
+                "img":"kind6.jpg",
+                "name":"沙发"
+            }
+        ]
+    },{
+        "kind":"户外运动" ,
+        "goods":[
+            {
+                "img":"kind5.jpg",
+                "name":"球"
+            },{
+                "img":"kind5.jpg",
+                "name":"运动器材"
+            }
+            ,{
+                "img":"kind5.jpg",
+                "name":"运动服饰 "
+            }
+        ]
+    },{
+        "kind":"酒零水果" ,
+        "goods":[
+            {
+                "img":"kind11.jpg",
+                "name":"时令水果"
+            },{
+                "img":"kind11.jpg",
+                "name":"卤味"
+            }
+            ,{
+                "img":"kind3.png",
+                "name":"白酒"
+            }
+        ]
+    },{
+        "kind":"数码家电" ,
+        "goods":[
+            {
+                "img":"kind12.jpg",
+                "name":"海尔"
+            },{
+                "img":"kind12.jpg",
+                "name":"冰箱"
+            }
+            ,{
+                "img":"kind12.jpg",
+                "name":"空调"
+            }
+        ]
+    },{
+        "kind":"母婴奶粉" ,
+        "goods":[
+            {
+                "img":"kind2.png",
+                "name":"哺乳喂养"
+            },{
+                "img":"kind2.png",
+                "name":"奶粉"
+            }
+            ,{
+                "img":"kind2.png",
+                "name":"婴儿车"
+            }
+        ]
+    },{
+        "kind":"鞋包服饰" ,
+        "goods":[
+            {
+                "img":"kind1.png",
+                "name":"男士手表"
+            },{
+                "img":"kind8.jpg",
+                "name":"男鞋"
+            },{
+                "img":"kind8.jpg",
+                "name":"内衣内裤"
+            }
+        ]
+    },{
+        "kind":"保健营养" ,
+        "goods":[
+            {
+                "img":"kind3.png",
+                "name":"保健品"
+            },{
+                "img":"kind3.png",
+                "name":"计生用品"
+            }
+            ,{
+                "img":"kind3.png",
+                "name":"红酒"
+            }
+        ]
+    },{
+        "kind":"教育培训" ,
+        "goods":[
+           
+        ]
+    },{
+        "kind":"品牌专区" ,
+        "goods":[
+            {
+                "img":"kind1.png",
+                "name":"手表"
+            },{
+                "img":"kind1.png",
+                "name":"耐克"
+            }
+            ,{
+                "img":"kind1.png",
+                "name":"香奈儿"
+            }
+        ]
+    }
+]

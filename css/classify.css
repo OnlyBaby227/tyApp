@@ -1,0 +1,108 @@
+.h-nav {
+  height: 3.666666rem;
+  box-shadow: 0 0.06rem 0.125rem 0.125rem rgba(0, 0, 0, 0.03);
+  z-index: 99999;
+}
+.h-nav .title {
+  line-height: 3.666666rem;
+  font-size: 1.5rem;
+  font-weight: 6000;
+  text-align: center;
+}
+.container {
+  z-index: 999;
+  overflow: hidden;
+}
+.container .slider-nav {
+  position: relative;
+  height: 3.666667rem;
+  padding: 0 1.25rem;
+  box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.06);
+  z-index: 9999;
+}
+.container .slider-nav .content {
+  overflow: auto;
+}
+.container .slider-nav .content .list {
+  display: flex;
+  width: 41.666667rem;
+  flex-wrap: nowrap;
+  padding: 0.708333rem 0;
+}
+.container .slider-nav .content .list li {
+  border: 0.041667rem solid #666;
+  padding: 0.625rem;
+  border-radius: 0.416667rem;
+  margin-right: 0.833333rem;
+}
+.container .slider-nav .content .list li a {
+  width: 100%;
+  height: 100%;
+  letter-spacing: 4px;
+}
+.container .slider-nav .content .list li.selected {
+  border-color: sandybrown;
+}
+.container .slider-nav .content .list li.selected a {
+  color: sandybrown;
+}
+.container .layout-box {
+  display: flex;
+}
+.container .layout-box .left-nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 6.875rem;
+  height: auto;
+  z-index: 99;
+}
+.container .layout-box .left-nav .list {
+  width: 100%;
+}
+.container .layout-box .left-nav .list li {
+  width: 100%;
+  height: 3.75rem;
+  background: #f9f9f9;
+}
+.container .layout-box .left-nav .list li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 3.75rem;
+  color: #999;
+}
+.container .layout-box .left-nav .list li.selected {
+  background: #fff;
+}
+.container .layout-box .left-nav .list li.selected a {
+  color: #000;
+  border-left: 0.333333rem solid #ff9326;
+}
+.container .layout-box .right-content {
+  width: 24.375rem;
+  height: auto;
+}
+.container .layout-box .right-content .goods-kind-list {
+  padding: 1.75rem 0 1.666667rem 1.75rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container .layout-box .right-content .goods-kind-list li {
+  margin-top: 0.5rem;
+  margin-right: 1.6rem;
+}
+.container .layout-box .right-content .goods-kind-list li a .pic {
+  width: 5.916667rem;
+  height: 5.916667rem;
+  background: chartreuse;
+  margin-bottom: 0.833333rem;
+  background-size: 100%;
+}
+.container .layout-box .right-content .goods-kind-list li a .sekcth {
+  font-size: 0.833333rem;
+  letter-spacing: 3px;
+  text-align: center;
+}

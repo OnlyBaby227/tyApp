@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>天眼购吧</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
+
 <body>
-    <header class="h-nav">
-        <form >
-            <div class="searchBox">
+    <header class="h-nav" id="h-nav">
+        <div class="come-back">
+            <a href="javascript:;">
+            </a>
+        </div>
+        <form action="goodslist.html" method="GET">
+            <div class="searchBox" id="searchBox">
                 <button for="" class="searBtn"></button>
-                <input type="search" class="search" id="search" value="请输入搜索的内容">
+                <input type="text" class="search" id="search" value="请输入搜索的内容">
             </div>
+            <input type="submit" id="submit" value="搜索">
         </form>
-        <div class="sch-interface">
-            
-        </div>  
         <div class="news" id="news">
 
         </div>
     </header>
     <article class="container">
         <section class="banner marTopShow">
-            <ul class="banlist">
-                <li class="item"></li> 
-            </ul>
-            <ul class="pageBtn">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
         </section>
         <section class="enter-list marTopShow">
             <div class="wrap">
                 <ul class="list">
                     <li>
                         <a href="javascript:;">
-                            <div class="pic"></div>
+                            <div class="pic">
+                            </div>
                             <div class="name">美妆洗护</div>
                         </a>
                     </li>
@@ -119,10 +116,10 @@
                     <div class="item">
                         <div class="content">
                             <h2 class="kind">
-                                日用品
+                                化妆品
                             </h2>
                             <h4 class="product">
-                                玫瑰花沐浴露
+                                玫瑰香水
                             </h4>
                             <div class="view">
                                 查看
@@ -132,10 +129,10 @@
                     <div class="item">
                         <div class="content">
                             <h2 class="kind">
-                                日用品
+                                玩具
                             </h2>
                             <h4 class="product">
-                                玫瑰花沐浴露
+                                玩偶
                             </h4>
                             <div class="view">
                                 查看
@@ -145,10 +142,10 @@
                     <div class="item">
                         <div class="content">
                             <h2 class="kind">
-                                日用品
+                                数码
                             </h2>
                             <h4 class="product">
-                                玫瑰花沐浴露
+                                照相机
                             </h4>
                             <div class="view">
                                 查看
@@ -163,7 +160,7 @@
                 <h3>限时抢购</h3>
                 <i></i>
             </div>
-            <ul class="timers">
+            <ul class="timers" id="timers">
                 <li class="hot">
                     <div class="timing">10:00</div>
                     <div class="snap-up">抢购中</div>
@@ -186,28 +183,63 @@
                 </li>
             </ul>
         </section>
-        <section class="buying-goods">
-            <div class="wrap">
-                <div class="goods-show">
-
-                </div>
-                <div class="goods-info">
-                    <div class="goods-title"></div>
-                    <div class="price">
-                        <span class="cur-price"></span>
-                        <span class="del-price"></span>
-                    </div>
-                    <div class="rushBtn">
-                        <h2 class="buy-now">马上抢</h2>
-                        <div class="slide">
-                            <div class="value"></div>
-                        </div>
-                        <div class="percent"></div>
-                    </div>
-                </div>
+        <section class="buying-goods marTopShow">
+            <div class="wrap" id="goodsList">
             </div>
         </section>
     </article>
+    <footer class="page-footer">
+        <div class="wrap">
+            <div class="btn headpage selected">
+                <a href="index.html">
+                    <div class="icon">
+                        <div class="pic icon_1"></div>
+                    </div>
+                    <p class="sketch">
+                        主页
+                    </p>
+                </a>
+            </div>
+            <div class="btn kindpage ">
+                <a href="classify.html">
+                    <div class="icon">
+                        <div class="pic icon_2"></div>
+                    </div>
+                    <p class="sketch">
+                        分类
+                    </p>
+                </a>
+            </div>
+            <div class="btn shopcar">
+                <a href="javascript:;">
+                    <div class="icon">
+                        <div class="pic icon_3"></div>
+                    </div>
+                    <p class="sketch">
+                        购物车
+                    </p>
+                </a>
+            </div>
+            <div class="btn mine">
+                <a href="javascript:;">
+                    <div class="icon">
+                        <div class="pic icon_4"></div>
+                    </div>
+                    <p class="sketch">
+                        我的
+                    </p>
+                </a>
+            </div>
+        </div>
+    </footer>
     <script src="./sctipts/rem.js"></script>
+    <script src="./sctipts/getData.js"></script>
+    <script src="./sctipts/search.js"></script>
+    <script src="./sctipts/updateGoods.js"></script>
+    <script src="./sctipts/sliderShow.js"></script>
+    <script>
+        
+    </script>
 </body>
+
 </html>
