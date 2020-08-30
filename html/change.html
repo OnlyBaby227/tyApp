@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更改密码</title>
+    <link rel="stylesheet" href="../css/change.min.css">
+    <link rel="stylesheet" href="../css/header.min.css">
+    <script src="../sctipts/rem.js"></script>
+</head>
+
+<body>
+    <!--头部-->
+    <header>
+        <div>
+            <a href="javascript:;" onclick="javascript:history.go(-1);">
+                <svg t="1598254007107" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="2060" width="25" height="25">
+                <path
+                    d="M313.84927582 512.33968684l403.41955066-403.42645486c16.95396363-16.9429169 16.95396364-44.44374273 0-61.38804046-16.9429169-16.95396363-44.44374273-16.95396364-61.38804047 0l-434.11840384 434.12116551c-16.95810615 16.9429169-16.95810615 44.44374273 0 61.38804047l434.11978468 434.11978467c8.47422013 8.47836265 19.58446539 12.71892482 30.69332981 12.71892482s22.22049052-4.24056217 30.69332982-12.71892482c16.95810615-16.9429169 16.95810615-44.44374273 0-61.38804047l-403.42231234-403.4278357z"
+                    p-id="2061"></path>
+            </svg>
+            </a>
+
+        </div>
+        <div>
+            <h2>更改密码</h2>
+        </div>
+        <div></div>
+    </header>
+
+    <!-- 主体 -->
+    <main>
+        <div class="conent">
+            <div class="logo">
+                <div class="logos">
+                    <div class="logo-one">
+                        <img src="../images/logo 拷贝.png" alt="">
+                    </div>
+                    <h3>天眼购吧</h3>
+                </div>
+            </div>
+
+            <div class="from">
+                <div class="from-one">
+                    <div id="box"></div>
+                    <div class="from-a"><span>账号&nbsp;:</span><input id="zng" type="text" placeholder="请输入手机号"></div>
+                    <div class="from-a min"><input type="text" placeholder="请输入验证码">
+                        <div class="xian"></div><button id="time" type="submit">获取验证码</button>
+                    </div>
+                    <div class="from-a"><span>密码&nbsp;:</span><input id="mim" type="password" placeholder="请输入密码"></div>
+                    <div class="from-a"><span>确认密码&nbsp;:</span><input id="mims" type="password" placeholder="请再次输入密码">
+                    </div>
+                    <button id="btn" class="btn" type="submit">修改</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 遮罩层 -->
+    <div id="cov" class="cover-up">
+        <div class="cover-one">
+            <div class="cha">
+                <svg id="cha" t="1598762960602" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2060" width="20" height="20"><path d="M769.3 715.5L564.9 511.1l279.9-279.9c2.5-2.5 4.5-5.2 6.1-8.1l1.4-1.4c14.2-14.2 14.2-37.5 0-51.8-14.2-14.2-37.5-14.2-51.8 0l-8.4 8.4-0.1 0.1-10 10c-2 1.3-3.8 2.8-5.5 4.5l-264.9 265-204.1-204.1-60.8-60.8-15-15c-2.5-2.5-5.2-4.5-8.1-6.1l-0.4-0.4c-14.2-14.2-37.5-14.2-51.8 0-14.2 14.2-14.2 37.5 0 51.8l83 83 204.4 204.4-279.9 279.9c-2.5 2.5-4.5 5.2-6.1 8.1l-1.4 1.4c-14.2 14.2-14.2 37.5 0 51.8 14.2 14.2 37.5 14.2 51.8 0l8.4-8.4 0.1-0.1 10-10c2-1.3 3.8-2.8 5.5-4.5L512.1 564l204.1 204 60.8 60.8 15 15c2.5 2.5 5.2 4.5 8.1 6.1l0.4 0.4c14.2 14.2 37.5 14.2 51.8 0 14.2-14.2 14.2-37.5 0-51.8l-83-83z" fill="" p-id="2061"></path></svg>
+            </div>
+            <div class="gou">
+                <div>
+                <svg t="1598763011968" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2780" width="20" height="20"><path d="M983.401029 312.812226C873.203723 52.468485 572.984424-69.438894 312.481279 40.366032A512.042874 512.042874 0 0 0 0.000123 511.601447C-0.196067 794.408909 228.928987 1023.865034 511.73645 1023.999914a511.871208 511.871208 0 0 0 199.757907-40.464127c260.319218-110.123735 382.067193-410.416605 271.906672-670.723561z m-471.60327 663.611684c-256.03983 0-464.356513-208.316683-464.356513-464.356513s208.255374-464.356513 464.295204-464.356513 464.417822 208.255374 464.417822 464.356513-208.316683 464.356513-464.356513 464.356513z" p-id="2781"></path><path d="M814.028003 327.624549a26.326206 26.326206 0 0 0-46.88934-16.418626L439.845184 640.473561 313.903654 487.813445a30.397143 30.397143 0 1 0-48.716357 36.356405 32.16285 32.16285 0 0 0 3.139036 3.580462l170.832187 194.963521 365.452377-374.894006a26.252635 26.252635 0 0 0 9.417106-20.195278z" p-id="2782"></path></svg>
+                <p>恭喜您修改成功</p>
+                </div>
+
+            </div>
+            <div class="cover-a">
+                <div class="den"><a href="./enroll.html">重新登录</a></div>
+                <div id="qu" class="qu"><a href="">稍后再说</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="../sctipts/login.js"></script>
+</body>
+
+</html>

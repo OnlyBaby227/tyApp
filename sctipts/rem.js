@@ -2,7 +2,7 @@
    var e = n.document,
    t=e.documentElement,
    i=750,
-   d=i/24,
+   d=i/16,
    o="orienttationchange" in n ? "orienttationchange":"resize",
    a = function () { 
        var n = t.clientWidth || 330; 

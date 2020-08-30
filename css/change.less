@@ -1,0 +1,185 @@
+
+
+//主体内容
+main{
+
+    .conent{
+        height: 70rem;
+        margin:1.5rem 1rem;
+        border-radius: 1.5rem;
+        background-color: #fff;
+        .logo{
+            height: 30rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logos{
+                .logo-one{
+                    width: 10rem;
+                    height: 10rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ff9326;
+                    border-radius: 0.8rem;
+                    img{
+                        width: 8rem;
+                        height: 8rem;
+                    }
+                }
+
+                h3{
+                    text-align: center;
+                    font-size: 2rem;
+                }
+            }
+
+        }
+        
+        .from{
+            height: 40rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            .from-one{
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                #box{
+                    height: 2rem;
+                    margin-bottom: 0.5rem;
+                    padding-left: 4rem;
+                    color: red;
+                }
+                input{
+                    color: #dadada;
+                    border: none;
+                    outline: none;
+                    text-indent: 1rem;
+                    width: 90%;
+                    height: 100%;
+                }
+
+                input::placeholder{
+                    color: #dadada;
+                }
+                .btn{
+                    height: 5rem;
+                    border: none;
+                    outline: none;
+                    color: #fffefe;
+                    font-size: 2rem;
+                    border-radius: 5px;
+                    background-color: #dadada;
+                }
+            }
+            .from-a{
+                height: 5rem;
+                margin-bottom: 1.5rem;
+                border: 1px solid #dadada;
+                display: flex;
+                align-items: center;
+                text-indent: 1rem;
+            }
+            .min{
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                button{
+                    width: 10rem;
+                    height: 5rem;
+                    outline: none;
+                    border: none;
+                    background-color: #fff;
+                    color:#ff9326;
+                }
+                .xian{
+                    width: 1px;
+                    background-color: #dadada;
+                    height: 3rem;
+                    opacity: 0.8;
+                    position: absolute;
+                    top: 1rem;
+                    right: 10rem;
+                }
+            }
+        }
+    }
+}
+
+.cover-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    .cover-one{
+        width: 31rem;
+        height: 22rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #ffffff;
+        border-radius: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .cha{
+            height: 2rem;
+            text-align: left;
+            text-align: right;
+            padding: 1rem 1rem 0 0;
+        }
+        .gou{
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            svg{
+                width: 4rem;
+                height: 4rem;
+                path{
+                    fill: #04be02;
+                }
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+        .cover-a{
+            height: 5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #dadada;
+            div{
+                width: 15rem;
+                height: 100%;   
+                text-align: center;
+                line-height: 5rem;             
+            } 
+            .den{
+                border-right:1px solid #dadada;
+                a{
+                    color: #ff9326;
+                }
+            }
+            .qu{
+
+                a{
+                    color: #dadada;
+                }
+            }
+        }
+    }
+}
