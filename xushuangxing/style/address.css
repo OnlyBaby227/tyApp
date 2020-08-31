@@ -1,0 +1,122 @@
+.public{
+    width: 93.6%;
+    box-shadow: 0rem 0rem 1rem 0rem 
+        rgba(171, 171, 171, 0.1);
+    border-radius: 1rem;
+    margin: 1rem auto;    
+}
+.container{
+    height: 28rem;
+	background-color: #ffffff;
+}
+.container .content{
+    display: flex;
+    align-items: center;
+    height:6rem;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    position: relative;
+}
+.little svg{
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    right: 2%;
+    top: 42%;
+}
+.container .content .people{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 51%;
+    height: 100%;
+    font-size:1.5rem;
+}
+.container .content .people input{
+    font-size: 1.5rem;
+    width: 60%;
+    height: 100%;
+    color:#9999;
+}
+.container .content .people input::placeholder{
+    color:#9999;
+}
+.address{
+    height: 6rem;
+    background-color: #ffffff;
+}
+.address .center{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.address .center span{
+    font-size: 1.5rem;
+}
+.address .center .roll{
+    width: 5rem;
+	height: 2.5rem;
+	border-radius: 1.5rem;
+    border: solid 1px #cacaca;
+    position: relative;   
+}
+.address .center .roll .radius{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #cacaca;
+    position: absolute;
+    left: 3%;
+    top: 10%;
+    transition: all .5s;
+}
+.new{
+    height: 6rem;
+    background-color: #ff9326;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 6rem;
+}
+.fixed{
+    width: 31rem;
+	height: 11rem;
+	background-color: white;
+    border-radius: 1rem;
+    position: absolute;
+    left: 15%;
+    top: 36rem;
+    font-size: 1.5rem;
+    z-index: 1;
+    display: none;
+}
+.fixed .top{
+    height: 5.5rem;
+    text-align: center;
+    line-height: 5.5rem;
+}
+.fixed .bottom{
+    height: 5.5rem;
+    display: flex;
+}
+.fixed .bottom .left,.fixed .bottom .right{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 5.5rem;
+}
+.fixed .bottom .right{
+    color: #ff9326;
+}
+.black{
+    width: 47rem;
+	height: 83rem;
+    background:black;
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}

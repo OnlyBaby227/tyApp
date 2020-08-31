@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收藏</title>
+    <link rel="stylesheet" href="./style/public.css">
+    <link rel="stylesheet" href="./style/collection.css">
+    <script src="./script/rem.js"></script>
+</head>
+<body>
+    <header>
+        <svg t="1598252230724" class="icon" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2118" width="28" height="28"><path d="M324.211517 511.805631 787.889594 73.082583c16.19422-16.630365 16.19422-43.974704 0-60.605068-16.19422-16.630365-42.495607-16.630365-58.613976 0L235.750113 479.360302c-8.647031 8.969398-12.344775 20.934917-11.719003 32.445329-0.644735 11.90863 3.071972 23.874149 11.719003 32.824585l493.506542 466.882788c16.118369 16.649327 42.438718 16.649327 58.613976 0 16.19422-17.085471 16.19422-43.974704 0-60.605068L324.211517 511.805631" p-id="2119" fill="#8a8a8a"></path></svg>
+        <h1>我的收藏</h1>
+        <a href="" class="mya">完成</a>
+    </header>
+    <div class="search">
+        <div class="mysearch">
+            <a href=""><svg t="1598335558064" class="icon" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2165" width="28" height="28"><path d="M873.6 842.9L716 685.4c28-29.2 50.2-62.9 66-100.1 17.3-40.8 26-84.1 26-128.7s-8.7-87.9-26-128.7c-16.7-39.4-40.5-74.7-70.9-105.1s-65.7-54.2-105.1-70.9c-40.8-17.3-84.1-26-128.7-26s-87.9 8.7-128.7 26c-39.4 16.7-74.7 40.5-105.1 70.9s-54.2 65.7-70.9 105.1c-17.3 40.8-26 84.1-26 128.7s8.7 87.9 26 128.7c16.7 39.4 40.5 74.7 70.9 105.1s65.7 54.2 105.1 70.9c40.8 17.3 84.1 26 128.7 26s87.9-8.7 128.7-26c21.7-9.2 42.2-20.6 61.4-34.1l161 161c12.4 12.4 32.8 12.4 45.2 0 12.4-12.5 12.4-32.8 0-45.3zM477.3 723.2c-71.2 0-138.2-27.7-188.6-78.1-50.4-50.4-78.1-117.3-78.1-188.6s27.7-138.2 78.1-188.6c50.4-50.4 117.3-78.1 188.6-78.1 71.2 0 138.2 27.7 188.6 78.1 50.4 50.4 78.1 117.3 78.1 188.6s-27.7 138.2-78.1 188.6c-50.4 50.4-117.4 78.1-188.6 78.1z" p-id="2166"></path></svg></a>
+            <input type="text" placeholder="搜索我收藏的商品">
+        </div>
+    </div>
+    <div class="container">
+        <h4>共2件商品</h4>
+        <div class="goods">
+            <div class="radius">
+
+            </div>
+            <div class="small-img">
+                <img src="./images/1.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="text-little">
+                    <span>依泉润唇膏套装 保湿滋润补水无色防干裂 唇部护理唇膜淡化唇纹护唇膏...</span>
+                </div>
+                <div class="price">
+                    <small>8g/ml</small>
+                    <span>￥98.9</span>
+                </div>
+            </div>
+        </div>
+        <div class="goods">
+            <div class="radius">
+                
+            </div>
+            <div class="small-img">
+                <img src="./images/3.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="text-little">
+                    <span>专柜正品YSL圣罗兰口红方管迷魅纯漾亮采唇膏</span>
+                </div>
+                <div class="price">
+                    <small>12g/ml</small>
+                    <span>￥138.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="new">
+        <span>删除</span>
+    </div>
+    <div class="fixed">
+        <div class="top">
+            确定要删除该收藏记录吗？
+        </div>
+        <div class="bottom">
+            <div class="left">
+                取消
+            </div>
+            <div class="right">
+                删除
+            </div>
+        </div>
+    </div>
+    <div class="black">
+
+    </div>
+    <script>
+        function Myroll() {
+            this.mycontainer = document.getElementsByClassName('container')[0];
+            this.myright = document.getElementsByClassName('right')[0];
+            this.mynew = document.getElementsByClassName("new")[0];
+            this.myfixed = document.getElementsByClassName("fixed")[0];
+            this.notsave = document.getElementsByClassName("left")[0];
+            this.myblack = document.getElementsByClassName("black")[0];
+            this.save();
+        }
+        Myroll.prototype.save = function () {
+            var _this = this;
+            this.mynew.onclick = function () {
+                _this.myfixed.style.display = "block";
+                _this.myblack.style.display = "block";
+            }
+            this.notsave.onclick = function () {
+                _this.myfixed.style.display = "none";
+                _this.myblack.style.display = "none";
+            }
+            this.myright.onclick = function(){
+                _this.mycontainer.style.display = "none";
+                _this.mynew.style.display = "none";
+                _this.myfixed.style.display = "none";
+                _this.myblack.style.display = "none";
+
+        }
+        }
+        var myroll = new Myroll();
+        
+        
+    </script>
+</body>
+</html>

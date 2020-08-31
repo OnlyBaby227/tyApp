@@ -1,0 +1,41 @@
+header .mya{
+    color: #999999;
+    font-size: 1.4rem;
+    position: absolute;
+    right: 3%;
+    top: 47%;
+}
+.container{
+    width: 44rem;
+    height: 73rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0rem 1rem 0rem 
+		rgba(171, 171, 171, 0.1);
+    border-radius: 1rem;
+    margin: .5rem auto;
+    padding: 2rem 0 0 0;
+}
+.content{
+    width: 42rem;
+    height: 6rem;
+    margin: 0 auto 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #666666;
+}
+.content .text{
+    width: 32rem;
+    height: 100%;
+    font-size: 1.4rem;
+}
+.text-left,.left-right{
+    height: 50%;
+}
+.text-left{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,139 @@
+header .mya{
+    color: #999999;
+    font-size: 1.4rem;
+    position: absolute;
+    right: 6%;
+    top: 47%;
+}
+.search{
+	height: 7rem;
+    background-color: #ffffff;
+    margin: .5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search .mysearch{
+    display: flex;
+    align-items: center;
+    width: 39rem;
+	height: 4rem;
+    background-color: #f7f7f7;
+    padding-left:1rem;
+}
+.search .mysearch svg{
+    width: 1.75rem;
+    height: 1.75rem;
+    vertical-align: bottom;
+}
+.search .mysearch input{
+    width: 80%;
+    height: 80%;
+    font-size:1.4rem;
+    background:transparent;
+}
+.search .mysearch input::placeholder{
+    color: #9999;
+}
+.container{
+    width: 44rem;
+    margin: 0 auto;
+}
+.container h4{
+    color: #999999;
+}
+.container .goods{
+	height: 15rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0rem 1rem 0rem 
+		rgba(171, 171, 171, 0.1);
+    border-radius: 1rem;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .goods .radius{
+    width: 2rem;
+	height: 2rem;
+    background-color: #cdcdcd;
+    border-radius: 50%;
+}
+.container .goods .small-img{
+    width: 10rem;
+    height: 10rem;
+}
+.container .goods .text{
+    width: 26rem;
+    height: 12rem;
+}
+.container .goods .text .text-little{
+    height: 4rem;
+    font-size:1.5rem;
+    color: #666666;
+}
+.container .goods .text .price{ 
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .goods .text .price small{
+    color: #9999;
+    font-size: 1.4rem;
+}
+.container .goods .text .price span{
+    color: #ff3333;
+    font-size: 1.6rem;
+}
+.new{
+    width: 44rem;
+    height: 6rem;
+    background-color: #ff9326;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 6rem;
+    border-radius: .5rem;
+    margin: 1rem auto; 
+}
+.fixed{
+    width: 31rem;
+	height: 11rem;
+	background-color: white;
+    border-radius: 1rem;
+    position: absolute;
+    left: 15%;
+    top: 36rem;
+    font-size: 1.5rem;
+    z-index: 1;
+    display: none;
+}
+.fixed .top{
+    height: 5.5rem;
+    text-align: center;
+    line-height: 5.5rem;
+}
+.fixed .bottom{
+    height: 5.5rem;
+    display: flex;
+}
+.fixed .bottom .left,.fixed .bottom .right{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 5.5rem;
+}
+.fixed .bottom .right{
+    color: #ff9326;
+}
+.black{
+    width: 47rem;
+	height: 83rem;
+    background:black;
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}

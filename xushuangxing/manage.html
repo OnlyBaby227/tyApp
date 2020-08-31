@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地址管理</title>
+    <link rel="stylesheet" href="./style/public.css">
+    <link rel="stylesheet" href="./style/manage.css">
+    <script src="./script/rem.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href=""><svg t="1598252230724" class="icon" viewbox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="2118" width="28" height="28">
+                <path
+                    d="M324.211517 511.805631 787.889594 73.082583c16.19422-16.630365 16.19422-43.974704 0-60.605068-16.19422-16.630365-42.495607-16.630365-58.613976 0L235.750113 479.360302c-8.647031 8.969398-12.344775 20.934917-11.719003 32.445329-0.644735 11.90863 3.071972 23.874149 11.719003 32.824585l493.506542 466.882788c16.118369 16.649327 42.438718 16.649327 58.613976 0 16.19422-17.085471 16.19422-43.974704 0-60.605068L324.211517 511.805631"
+                    p-id="2119" fill="#8a8a8a"></path>
+            </svg></a>
+        <h1>地址管理</h1>
+        <a href="./address.html" class="mya">添加收货地址</a>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="text">
+                <div class="text-left">
+                    <span class="item"></span>
+                    <span class="item"></span>
+                </div>
+                <div class="text-right">
+                    <span class="item"></span><span class="item"></span>
+                </div>
+            </div>
+            <span>编辑</span>
+        </div>
+    </div>
+    <script src="./script/public.js"></script>
+    <script>
+        var mytext = document.getElementsByClassName("item");
+        var mya = document.getElementsByClassName("mya")[0];
+        var mycontent = document.getElementsByClassName("content")[0];
+        var myspan = mycontent.lastElementChild;
+        var getinfoone = document.getElementsByClassName("item")[0];
+        var getinfotwo = document.getElementsByClassName("item")[1];
+        var getinfothree = document.getElementsByClassName("item")[2];
+        var getinfofour = document.getElementsByClassName("item")[3];
+        var myuser = JSON.parse(localStorage.getItem('user'));
+        var myedituser = JSON.parse(localStorage.getItem('edituser'));
+        for (let i = 0; i < mytext.length; i++) {
+            if(localStorage.valueOf().user){
+                mytext[i].innerHTML = myuser[i];
+                myspan.style.display = "block";
+            }else{
+                myspan.style.display = "none";
+            }
+            if(localStorage.valueOf().edituser){
+                mytext[i].innerHTML = myedituser[i]
+            }else{
+
+            }
+            // localStorage.valueOf().user ? mytext[i].innerHTML = myuser[i] : "";
+            // localStorage.valueOf().edituser ? mytext[i].innerHTML = myedituser[i] : "";
+        }
+        myspan.onclick = function () {
+            var obj3 = [
+                getinfoone.innerHTML, getinfotwo.innerHTML, getinfothree.innerHTML, getinfofour.innerHTML
+            ]
+            var json3 = JSON.stringify(obj3)
+            localStorage.setItem('spanuser', json3)
+            if (localStorage.getItem('spanuser')) {
+                var spanuser = localStorage.getItem('spanuser');
+                console.log(JSON.parse(spanuser))
+            } else {
+                console.error('本地数据不存在')
+            }
+            console.log(JSON.parse(spanuser))
+            location.href = "./edit.html";
+        }
+    </script>
+</body>
+
+</html>

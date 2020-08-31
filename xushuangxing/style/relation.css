@@ -1,0 +1,13 @@
+.container{
+    width: 44rem;
+	height: 18rem;
+	background-color: #ffffff;
+    border-radius: 1rem;
+    margin: .5rem auto;
+    font-size:1.4rem;
+    color: #999999;
+    padding: .5rem 0 0 2rem;
+}
+.container p{
+    margin-top: 2rem;
+}

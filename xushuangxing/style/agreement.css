@@ -1,0 +1,28 @@
+.container{
+    width: 44rem;
+	height: 161rem;
+	background-color: #ffffff;
+    border-radius: 1rem;
+    margin: 0.5rem auto;
+}
+.container .content{
+    width: 42rem;
+    height: 150rem;
+    margin: 1rem auto;
+    padding: 1.5rem 0 0 0;
+}
+.container p{
+    font-size: 1.2rem;
+    color: #9999;
+}
+.container .new{
+    width: 11rem;
+	height: 4rem;
+    background-color: #ff9326;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 4rem;
+    border-radius: .5rem;
+    margin: 0 auto; 
+    color: white;
+}
